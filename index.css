@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background: #333;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+audio{
+    width: 200px;
+}
+
+.music-player {
+    background: #ffe0e5;
+    width: 90%; /* Adjusted width for mobile */
+    max-width: 400px; /* Added max-width to limit size on larger screens */
+    padding: 25px 35px;
+    text-align: center;
+    margin: 20px; /* Added margin for spacing */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.songimg {
+    border-radius: 50%;
+    width: 70%; /* Adjusted width for mobile */
+    max-width: 220px; /* Added max-width to limit size on larger screens */
+    border: 8px solid #fff;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    margin: 0 auto 20px; /* Centered image and added bottom margin */
+}
+
+.music-player h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px; /* Adjusted margin for better spacing */
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.controls div {
+    margin-top: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .music-player {
+        width: 100%;
+    }
+
+    .songimg {
+        width: 80%;
+    }
+}
